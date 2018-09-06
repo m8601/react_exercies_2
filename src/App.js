@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import NavMenu from './NavMenu';
+import Header from './Header';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ class App extends Component {
     return (
       <div>
         <NavMenu linkClicked={this.handleLinkClick} toggleMenu={this.handleToggleMenu} isOpen={this.state.menuOpen}/>
+        <Header/>
       </div>
     );
   }

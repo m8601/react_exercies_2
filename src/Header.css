@@ -1,0 +1,48 @@
+.Header {
+  height: 100vh;
+  background: url('./img/intro-bg.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.Header__title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.Header__subtitle {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 15px 0 25px;
+}
+
+.Header__button {
+  background-color: #628d0f;
+  border: none;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 569px){
+  .Header__title {
+    font-size: 10em;
+  }
+
+  .Header__subtitle {
+    margin: 25px 0 45px;
+  }
+}
