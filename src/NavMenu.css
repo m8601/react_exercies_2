@@ -1,0 +1,125 @@
+.NavMenu {
+  background: #262626;
+  color: #fff;
+}
+
+.NavMenu__container {
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavMenu__title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  color: #8eb640;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.NavMenu__toggleButton {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.NavMenu__links {
+  position: absolute;
+  top: 60px;
+  left: -700px;
+  width: 100%;
+  height: 300px;
+  background: #262626;
+  transition: left .5s ease-in-out;
+}
+
+.NavMenu__links--open {
+  left: 0;
+}
+
+.NavMenu__linksContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.NavMenu__linksContainer a {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.NavMenu__linksContainer a:hover {
+  color: #8eb640;
+}
+
+
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.bar1 {
+  top: 0;
+  transition: all .5s ease-in-out;
+}
+
+.bar2 {
+  top: 8px;
+  transition: opacity .3s ease-in-out;
+}
+
+.bar3 {
+  bottom: 0;
+  transition: all .5s ease-in-out;
+}
+
+.bar1--open {
+  top: 8px;
+  transform: rotate(45deg)
+}
+
+.bar2--open {
+  opacity: 0;
+}
+
+.bar3--open {
+  bottom: 8px;
+  transform: rotate(-45deg)
+}
+
+@media screen and (min-width: 569px){
+  .NavMenu__container {
+    width: 80%;
+  }
+  .NavMenu__toggleButton {
+    display: none;
+  }
+  .NavMenu__links {
+    position: static;
+    height: initial;
+    width: auto;
+  }
+  .NavMenu__linksContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .NavMenu__linksContainer a {
+    margin: 0 40px 0 0;
+  }
+}
+
