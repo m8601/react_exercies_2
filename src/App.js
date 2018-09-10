@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import NavMenu from './NavMenu';
 import Header from './Header';
 import About from './About';
+import MenuHeader from './MenuHeader';
 
 import './App.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
         <NavMenu linkClicked={this.handleLinkClick} toggleMenu={this.handleToggleMenu} isOpen={this.state.menuOpen}/>
         <Header/>
         <About/>
+        <MenuHeader/>
       </div>
     );
   }
