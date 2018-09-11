@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 import NavMenu from './NavMenu';
 import Header from './Header';
 import About from './About';
-import MenuHeader from './MenuHeader';
+import ParallaxHeader from './ParallaxHeader';
 import Menu from './Menu';
 
 import './App.css';
+import bgMenu from './img/menu-bg.jpg';
+import bgGallery from './img/gallery-bg.jpg';
 
 const dishes = [
   {
@@ -64,8 +66,9 @@ class App extends Component {
         <NavMenu linkClicked={this.handleLinkClick} toggleMenu={this.handleToggleMenu} isOpen={this.state.menuOpen}/>
         <Header/>
         <About/>
-        <MenuHeader/>
+        <ParallaxHeader bg={bgMenu} title={'Menu'}/>
         <Menu dishes={dishes}/>
+        <ParallaxHeader bg={bgGallery} title={'Gallery'}/>
       </div>
     );
   }

@@ -2,9 +2,9 @@ import React from 'react';
 import './MenuHeader.css';
 import { Parallax } from 'react-parallax';
 
-import bg from './img/menu-bg.jpg'
 
-const MenuHeader = (props) => {
+
+const ParallaxHeader = ({bg, title}) => {
   return (
     <div className="MenuHeader">
       <Parallax
@@ -13,7 +13,7 @@ const MenuHeader = (props) => {
         strength={700}
       >
         <div className="MenuHeader__content">
-          <h1>Menu</h1>
+          <h1>{title}</h1>
           <hr/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed.</p>
         </div>
@@ -22,4 +22,4 @@ const MenuHeader = (props) => {
   );
 }
 
-export default MenuHeader;
+export default ParallaxHeader;
