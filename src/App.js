@@ -10,6 +10,7 @@ import Chefs from './Chefs';
 import Reservation from './Reservation';
 import Contact from './Contact';
 import Information from './Information';
+import Footer from './Footer';
 
 import './App.css';
 import bgMenu from './img/menu-bg.jpg';
@@ -86,6 +87,7 @@ class App extends Component {
         <Reservation/>
         <Contact/>
         <Information/>
+        <Footer/>
       </div>
     );
   }
