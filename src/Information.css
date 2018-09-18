@@ -1,0 +1,40 @@
+.Information {
+  padding: 50px 0;
+  background: #262626;
+}
+
+.Information__content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Information__info {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.Information__header {
+  color: #8eb640;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.Information__moreInfo {
+  font-size: 15px;
+  color: rgba(255,255,255,0.8);
+}
+
+@media screen and (min-width: 569px){
+  .Information__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Information__info {
+    width: 30%;
+  }
+}

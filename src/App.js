@@ -9,6 +9,7 @@ import Gallery from './Gallery';
 import Chefs from './Chefs';
 import Reservation from './Reservation';
 import Contact from './Contact';
+import Information from './Information';
 
 import './App.css';
 import bgMenu from './img/menu-bg.jpg';
@@ -84,6 +85,7 @@ class App extends Component {
         <Chefs/>
         <Reservation/>
         <Contact/>
+        <Information/>
       </div>
     );
   }
