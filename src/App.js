@@ -5,6 +5,7 @@ import Header from './Header';
 import About from './About';
 import ParallaxHeader from './ParallaxHeader';
 import Menu from './Menu';
+import Gallery from './Gallery';
 
 import './App.css';
 import bgMenu from './img/menu-bg.jpg';
@@ -45,7 +46,14 @@ const dishes = [
 
 class App extends Component {
   state = {
-    menuOpen: false
+    menuOpen: false,
+    activeCategory: 'all'
+  }
+
+  handleSetCategory = (cat) => {
+    this.setState({
+      activeCategory: cat
+    })
   }
 
   handleToggleMenu = () => {
@@ -69,6 +77,7 @@ class App extends Component {
         <ParallaxHeader bg={bgMenu} title={'Menu'}/>
         <Menu dishes={dishes}/>
         <ParallaxHeader bg={bgGallery} title={'Gallery'}/>
+        <Gallery setCategory={this.handleSetCategory} activeCat={this.state.activeCategory}/>
       </div>
     );
   }
