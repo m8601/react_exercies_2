@@ -1,0 +1,12 @@
+.Reservation {
+  padding: 50px 0;
+  text-align: center;
+  background: #628d0f;
+}
+
+.Reservation h2 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0;
+}
