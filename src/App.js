@@ -6,6 +6,7 @@ import About from './About';
 import ParallaxHeader from './ParallaxHeader';
 import Menu from './Menu';
 import Gallery from './Gallery';
+import Chefs from './Chefs';
 
 import './App.css';
 import bgMenu from './img/menu-bg.jpg';
@@ -78,6 +79,7 @@ class App extends Component {
         <Menu dishes={dishes}/>
         <ParallaxHeader bg={bgGallery} title={'Gallery'}/>
         <Gallery setCategory={this.handleSetCategory} activeCat={this.state.activeCategory}/>
+        <Chefs/>
       </div>
     );
   }

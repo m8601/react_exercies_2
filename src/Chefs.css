@@ -1,0 +1,81 @@
+.Chefs {
+  height: 350px;
+}
+
+.Chefs__content {
+  box-sizing: border-box;
+  height: auto;
+  background: rgba(0, 0, 0, .7);
+  padding: 75px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.Chefs__content h1 {
+  font-weight: 500;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.Chefs__content p {
+  font-size: 22px;
+  color: rgba(255,255,255,0.8);
+}
+
+.Chefs__team {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+.Chefs__teamMember {
+  margin: 20px;
+}
+
+.Chefs__img {
+  max-width: 280px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.Chefs__img img {
+  display: inline-block;
+}
+
+.Chefs__img::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 1px solid #fff;
+}
+
+.Chefs__name {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.Chefs__about {
+  color: rgba(255,255,255,0.7);
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 569px){
+  .Chefs__team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .Chefs__teamMember {
+    width: 30%;
+    margin: 0;
+  }
+}
