@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: #777;
   font-weight: 300;
 }
+
 
 hr {
   height: 2px;
@@ -12,4 +17,16 @@ hr {
   background: #8eb640;
   margin: 0 auto 40px;
   border: 0;
+}
+
+.Section__header {
+  font-weight: 500;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.Section__desc {
+  font-size: 22px;
+  color: rgba(255,255,255,0.8);
 }
